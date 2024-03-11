@@ -50,3 +50,6 @@ bin/
 *.jar
 *.bat
 *.bin
+app/build/distributions/app.tar
+app/build/distributions/app.zip
+app/build/libs/app.jar
