@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 public class ChatServer {
 
     public static void main(String[] args) {
-        Server server = new Server("localhost", 8090, "/folder", null, ChatServerEndpoint.class);
+        Server server = new Server("localhost", 8081, "/folder", null, ChatServerEndpoint.class);
         try {
             server.start();
             System.out.println("--- server is running");
