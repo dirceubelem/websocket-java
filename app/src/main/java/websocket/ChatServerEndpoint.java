@@ -1,4 +1,4 @@
-package websocket.java.api;
+package websocket;
 
 import javax.websocket.*;
 import javax.websocket.CloseReason.CloseCodes;

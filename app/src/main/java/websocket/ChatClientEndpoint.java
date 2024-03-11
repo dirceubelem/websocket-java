@@ -1,4 +1,4 @@
-package websocket.java.api;
+package websocket;
 
 import org.glassfish.tyrus.client.ClientManager;
 
