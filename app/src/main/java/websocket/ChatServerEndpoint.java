@@ -11,6 +11,11 @@ public class ChatServerEndpoint {
     @OnOpen
     public void onOpen(Session session) {
         System.out.println("Connected, sessionID = " + session.getId());
+        try {
+            session.getBasicRemote().sendText("Seja bem vindo");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     @OnMessage
