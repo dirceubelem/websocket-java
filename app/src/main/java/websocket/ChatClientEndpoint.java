@@ -46,6 +46,7 @@ public class ChatClientEndpoint {
     public static void main(String[] args) {
         latch = new CountDownLatch(1);
         ClientManager client = ClientManager.createClient();
+//        client.getProperties().put(ClientProperties.CREDENTIALS, new Credentials("ws_user", "password");
         try {
             URI uri = new URI("ws://localhost:8080/folder/app");
             client.connectToServer(ChatClientEndpoint.class, uri);
